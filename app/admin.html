@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>账户中心</title>
+	<link rel="stylesheet" href="css/neat.css">
+	<link rel="stylesheet" type="text/css" href="css/function.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<script src="js/lib/require.js" type="text/javascript" data-main="js/reqConf.js"></script>
+</head>
+<body ms-controller="user" style="min-width:960px;">
+	<script type="text/javascript">
+    //这里给后端提供数据接口
+    var conf = {
+    	username: {"id": "11", "name": "VaJoy"}
+    }
+</script>
+	<div class="g-hd m-navbar f-cb">
+		<span class="item1">
+					
+		
+		<a href="http://www.youku.com/">
+			<img src="http://static.youku.com/index/img/header/yklogo_h.png" width="140" height="50" alt="Youku 优酷" from="index">
+		</a>
+		</span>
+		<span class="item2"><div>{{username.name}}你好，欢迎来到账户中心<a class="f-csp" ms-click="signUp">退出登陆</a></div></span>
+		
+	</div>
+	<div class="g-bd f-cb">	
+		<div class="g-sd">
+			<ul>
+				<li><a href="#!/index">我的首页</a></li>
+				<li><a href="#!/user/list">账户详情</a></li>
+				<li><a href="#!/role/list">我要充值</a></li>
+			</ul>
+		</div>
+		<div class="g-mn">
+			<div ms-view class="g-mnc"> <!--这里使用ms-include-src接口，它会引入pageUrl属性所对应的文件-->
+
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="g-ft">
+		
+	</div>
+</body>
+</html>

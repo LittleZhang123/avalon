@@ -1,0 +1,17 @@
+
+
+/* 两列右侧自适应布局 */
+.g-bd{margin:0 0 10px;}
+.g-sd{position:relative;float:left;width:190px;margin-right:-190px;}
+.g-mn{float:right;width:100%;}
+.g-mnc{margin-left:200px;}
+
+
+/*组件*/
+
+/*导航条*/
+.m-navbar{padding: 0 10px;border-bottom: solid 1px #e1e1e1;}
+.m-navbar >.item1,.m-navbar >.item2,.m-navbar >.item3{height: 50px;line-height: 50px;}
+.m-navbar >.item1{float: left;}
+.m-navbar >.item2{float: left;}
+.m-navbar >.item3{float: right;}

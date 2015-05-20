@@ -1,0 +1,1 @@
+(function(){function i(){return avalon.vmodels.pages}var e="hashchange",t=document,n=t.documentMode,r="on"+e in window&&(n===void 0||n>7);r&&avalon.bind(window,"hashchange",function(){i().activeIndex=i().computeActiveIndex()})})();
